@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { Navigation } from "@/components/sections/navigation";
+import { Offer } from "@/components/sections/offer";
 
 export default function Home() {
   return (
@@ -7,8 +8,7 @@ export default function Home() {
       <Navigation />
       <main className="pt-20">
         <Hero />
-
-        <section id="offer" className="h-24" aria-hidden="true" />
+        <Offer />
         <section id="trainers" className="h-24" aria-hidden="true" />
         <section id="reviews" className="h-24" aria-hidden="true" />
         <section id="blog" className="h-24" aria-hidden="true" />
