@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
+/* ─── Design Tokens (z projektu Figma) ─────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf8;
+  --foreground: #2c2c2c;
+  --primary: #2c2c2c;
+  --primary-foreground: #fafaf8;
+  --secondary: #d4c5b0;
+  --secondary-foreground: #2c2c2c;
+  --accent: #d4c5b0;
+  --accent-foreground: #2c2c2c;
+  --muted: #e8e5e0;
+  --muted-foreground: #6b6b6b;
+  --card: #ffffff;
+  --card-foreground: #2c2c2c;
+  --border: rgba(44, 44, 44, 0.1);
+  --radius: 0.625rem;
 }
 
+/* ─── Tailwind v4 theme mapping ─────────────────────────────────────── */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --radius-DEFAULT: var(--radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base styles ───────────────────────────────────────────────────── */
+* {
+  border-color: var(--border);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
