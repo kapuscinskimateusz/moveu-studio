@@ -70,6 +70,7 @@ export function Offer() {
                     src={program.image}
                     alt={program.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-primary/35 transition-colors group-hover:bg-primary/50" />

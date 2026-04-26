@@ -49,8 +49,14 @@ export function Trainers() {
               className="overflow-hidden rounded-lg bg-card shadow-sm transition-shadow hover:shadow-xl"
             >
               <div className="relative h-80 overflow-hidden">
-                <Image src={trainer.image} alt={trainer.name} fill className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
+                <Image
+                  src={trainer.image}
+                  alt={trainer.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="mb-1 text-2xl font-bold">{trainer.name}</h3>
                   <p className="text-white/90">{trainer.role}</p>
