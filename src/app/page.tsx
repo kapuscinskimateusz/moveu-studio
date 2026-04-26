@@ -3,6 +3,7 @@ import { Navigation } from "@/components/sections/navigation";
 import { Offer } from "@/components/sections/offer";
 import { Trainers } from "@/components/sections/trainers";
 import { Reviews } from "@/components/sections/reviews";
+import { Blog } from "@/components/sections/blog";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <Offer />
         <Trainers />
         <Reviews />
-        <section id="blog" className="h-24" aria-hidden="true" />
+        <Blog />
         <section id="contact" className="h-24" aria-hidden="true" />
       </main>
     </>
