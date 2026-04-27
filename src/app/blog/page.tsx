@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowRight, ArrowLeft, Search } from "lucide-react";
 import { blogPosts } from "@/lib/data/blogPosts";
+import { Footer } from "@/components/sections/footer";
 
 const categories = ["Wszystkie", ...Array.from(new Set(blogPosts.map((p) => p.category)))];
 
@@ -139,6 +140,7 @@ export default function BlogPage() {
           )}
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { Trainers } from "@/components/sections/trainers";
 import { Reviews } from "@/components/sections/reviews";
 import { Blog } from "@/components/sections/blog";
 import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Blog />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

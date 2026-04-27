@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 type Trainer = {
@@ -86,7 +86,7 @@ export function Trainers() {
                     aria-label="LinkedIn"
                     className="rounded-lg bg-muted p-2 text-foreground transition-colors hover:bg-accent"
                   >
-                    <FaLinkedinIn className="h-5 w-5" />
+                    <FaLinkedin className="h-5 w-5" />
                   </a>
                 </div>
               </div>
